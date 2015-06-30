@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next use-motion ">
+<html class="theme-next use-motion theme-next-mist">
 <head>
   
 
@@ -118,6 +118,13 @@
 
         
           
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/05/18/hello-world/#comments" >
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/05/18/hello-world/"></span>
+            </a>
+          </span>
+          
         
       </div>
     </div>
@@ -155,6 +162,10 @@
 
     
       <div class="comments" id="comments">
+        
+          <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
         
       </div>
     
@@ -225,9 +236,29 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/thuai" target="_blank">GitHub</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/CNTHUAI" target="_blank">Twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/thuai80" target="_blank">Weibo</a>
+            </span>
+            
+          
         </div>
 
         
+        
+          <div class="cc-license motion-element">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
         
 
       </div>
@@ -270,7 +301,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 
@@ -395,6 +426,9 @@
       $.Velocity.RunSequence([
         { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
         { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        
+        { e: $('.logo-line-before i'), p: { translateX: "100%" }, o: { duration: 500, sequenceQueue: false } },
+        { e: $('.logo-line-after i'), p: { translateX: "-100%" }, o: { duration: 500, sequenceQueue: false } },
         
         { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
       ]);
@@ -812,6 +846,26 @@
   
   
 
+  
+
+    
+      
+    
+
+    <script type="text/javascript">
+      var disqus_shortname = 'thuai';
+      var disqus_identifier = '2015/05/18/hello-world/';
+      var disqus_title = 'Hello World';
+      var disqus_url = 'http://yoursite.com/2015/05/18/hello-world/';
+
+      (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }());
+    </script>
   
 
 
